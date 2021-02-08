@@ -1,0 +1,36 @@
+/* Кнопки */
+.buttons {
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.buttons:hover,
+.buttons:focus,
+.buttons:active {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+/* Список примеров */
+.examples-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.examples-text {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
