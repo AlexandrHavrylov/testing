@@ -16,6 +16,7 @@
   --white-color: #ffffff;
   --black-logo: #000000;
   --footer-address-color: rgba(255, 255, 255, 0.6);
+  --card-set-gap: 30px;
 }
 
 body {
@@ -32,6 +33,8 @@ a {
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -48,7 +51,27 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.no-gap {
+  display: block;
+}
+
 /* Навигация сайта */
+.nav,
+.nav-list,
+.contacts,
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .head-logo {
   color: var(--black-logo);
 
@@ -56,10 +79,22 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav-list {
+  margin-left: 93px;
 }
 
 .head-logo span {
   color: var(--accent-color);
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 53px;
 }
 
 .nav-link {
@@ -81,6 +116,11 @@ a {
 }
 
 /* Контакты в хедере */
+
+.contact-item:last-child {
+  margin-left: 50px;
+}
+
 .contacts-link {
   color: var(--secondary-text-color);
 
@@ -104,6 +144,11 @@ a {
   line-height: 1.71;
 }
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer-logo {
   color: var(--white-color);
 
@@ -111,6 +156,17 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+
+  display: inline-block;
+}
+
+.address-item.text {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.address-item {
+  margin-top: 9px;
 }
 
 .address {
