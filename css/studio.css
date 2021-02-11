@@ -125,8 +125,10 @@
 
 .team-item {
   margin-left: var(--card-set-gap);
-  flex-direction: calc(100% / 3 - var(--card-set-gap));
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
   padding-bottom: 30px;
+
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {

@@ -60,6 +60,7 @@ a {
 
 .no-gap {
   display: block;
+  max-width: 100%;
 }
 
 /* Навигация сайта */
@@ -70,6 +71,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .head-logo {
